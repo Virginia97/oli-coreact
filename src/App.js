@@ -1,11 +1,11 @@
 import './App.css';
+import logo from './logomuffin.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="navbar">
-      <img className="logoNav" src="src/logomuffin.png"></img>
-        <h1>Oli & Co Bakery</h1>
+      <header>
+        <img src={logo}/>
         <nav className="navigation">
           <ul>
             <li><a href="">Inicio</a></li>
@@ -14,6 +14,7 @@ function App() {
           </ul>
         </nav>
       </header>
+      <h1>Oli & Co Bakery</h1>
     </div>
   );
 }
