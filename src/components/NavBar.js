@@ -1,7 +1,7 @@
-import './App.css';
-import logo from './logomuffin.png';
+import logo from './../logomuffin.png';
+import { Carrito } from './../components/CartWidget.js';
 
-function App() {
+export const Navbar = () => {
   return (
     <div className="App">
       <header className="navbar">
@@ -12,11 +12,11 @@ function App() {
             <li><a href="">Inicio</a></li>
             <li><a href="">Productos</a></li>
             <li><a href="">Contacto</a></li>
+            <Carrito/>
           </ul>
         </nav>
       </header>
+      
     </div>
   );
 }
-
-export default App;
