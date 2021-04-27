@@ -1,6 +1,7 @@
 import './App.css';
 import { Navbar } from './components/NavBar.js';
 import { Productos } from './components/Products.js';
+
 const listaProductos = [{
   titulo: 'Cupcake Chocolate',
   precio: 80,
