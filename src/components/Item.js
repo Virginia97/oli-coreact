@@ -1,14 +1,17 @@
-import {muffinData} from './ItemList'
+import { ItemCount } from './ItemCount.js';
 
-let getMuffin = new Promise ((resolve) => {
-setTimeout (() => {
-  resolve(getMuffin)
-}, 2000)
-})
+export const Items = (props) => {
+    const hacerClick = () => { alert(`Solo por hoy 2x1 en ${props.titulo}`) }
 
-.then((response) => {
-  console.log('muffinData')
-  for (let i = 0; i < response.length; i++){
-    console.log("Muffin tittle:", response[i].name)
-  }
-})
+    return (
+        <div className="App">
+            <div onClick={hacerClick}>
+                <h2>{props.name}</h2>
+                <p>{props.description}</p>
+                <p>{props.price}</p>
+                <p>{props.stock}</p>
+            </div>
+            <ItemCount stock='5' initial='1' />
+        </div>
+    )
+}

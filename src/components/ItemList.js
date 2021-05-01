@@ -1,3 +1,5 @@
+import { Items } from './Item.js'
+
 export const muffinData = [
     {
       name: 'Cupcake Chocolate',
@@ -17,6 +19,19 @@ export const muffinData = [
       price: 90,
       stock: 5,
     }
-  ]
+]
 
+let getMuffin = new Promise ((resolve) => {
+  console.log('Obteniendo muffin')
+setTimeout (() => {
+  resolve(muffinData)
+}, 2000)
+})
+.then((response) => {
+  console.log(response)
+  for (let i = 0; i < response.length; i++){
+    console.log("Muffin title:", response[i].name)
+    Items(response[i])
+  }
+})
 
