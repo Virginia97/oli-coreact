@@ -3,7 +3,6 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
     function quitarItem() {
         if (total > initial) {
             total--
-            console.log(total)
         }
         return total
     }
@@ -11,7 +10,6 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
     function agregarItem() {
         if (total < stock) {
             total++
-            console.log(total)
         }
         return total
     }
@@ -25,3 +23,4 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
         </div>
     );
 }
+
