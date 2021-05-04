@@ -1,6 +1,7 @@
 import { ItemCount } from './ItemCount.js';
 
 export const Items = (props) => {
+    console.log(props)
     const hacerClick = () => { alert(`Solo por hoy 2x1 en ${props.titulo}`) }
 
     return (

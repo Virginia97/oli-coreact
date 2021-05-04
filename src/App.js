@@ -1,7 +1,6 @@
 import './App.css';
 import { Navbar } from './components/NavBar.js';
-import { Productos } from './components/ItemListContainer.js';
-import { muffinData } from './components/ItemList'
+import { ItemListContainer } from './components/ItemListContainer.js';
 
 function App() {
   return (

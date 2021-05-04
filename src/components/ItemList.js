@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react'
 import { Items } from './Item.js'
 
 export const muffinData = [
@@ -34,4 +35,11 @@ setTimeout (() => {
     Items(response[i])
   }
 })
+
+/* useEffect(() => {
+  getMuffin(muffinData).then(result => {
+      console.log(result)
+      Items(result);
+  });
+}, []) */
 
