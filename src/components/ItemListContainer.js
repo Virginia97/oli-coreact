@@ -1,13 +1,16 @@
-import { getMuffin, muffinData } from './ItemList.js'
+import { muffinData } from './ItemList.js'
 
 export const ItemListContainer = () => {
     return (
         <div className="App">
-            <h2>{muffinData.name}</h2>
-            <p>{muffinData.description}</p>
-            <p>{muffinData.price}</p>
-            <p>{muffinData.stock}</p>
+            {muffinData.map(muffin =>
+                <>
+                    <h2>{muffin.name}</h2>
+                    <p>{muffin.description}</p>
+                    <p>{muffin.price}</p>
+                    <p>{muffin.stock}</p>
+                </>
+            )} 
         </div>
-
     );
 }
