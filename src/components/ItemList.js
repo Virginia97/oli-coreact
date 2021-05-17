@@ -6,19 +6,19 @@ export const muffinData = [
     name: 'Cupcake Chocolate',
     description: 'Muffin de chocolate semi amargo',
     price: 80,
-    stock: 5,
+    image: 'src/images/chocolate.jpg',
   },
   {
     name: 'Cupcake Blueberry',
     description: 'Muffin de arándanos',
     price: 100,
-    stock: 5,
+    image: 'src/images/blueberry.jpg',
   },
   {
     name: 'Muffin Frutilla',
     description: 'Muffin de frutillas',
     price: 90,
-    stock: 5,
+    image: 'src/images/muffinfrutilla.png',
   }
 ]
 
@@ -66,52 +66,7 @@ export const ItemList = () => {
 
 
 
-/*import { useState, useEffect } from 'react';
 
-export const muffinData = [
-  {
-    name: 'Cupcake Chocolate',
-    description: 'Muffin de chocolate semi amargo',
-    price: 80,
-    stock: 5,
-  },
-  {
-    name: 'Cupcake Blueberry',
-    description: 'Muffin de arándanos',
-    price: 100,
-    stock: 5,
-  },
-  {
-    name: 'Muffin Frutilla',
-    description: 'Muffin de frutillas',
-    price: 90,
-    stock: 5,
-  }
-]
-
-export muffins ()
-const [muffins, setMuffins] = useState([]);
-
-
-const getMuffin = () => {
-  new Promise(
-    (resolve) => {
-      setTimeout(() => {
-        resolve(muffinData);
-      }, 2000);
-    },
-    (reject) => {
-      if (muffinData) reject ("Lo sentimos 😥 Error del servidor");
-    }
-  ).then ((resolve) => {
-    setMuffins(resolve);
-  });
-};
-
-useEffect(() => {
-  getMuffin();
-}, []);
-}*/
 
 
 
