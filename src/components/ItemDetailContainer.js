@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { muffinData } from './ItemList.js';
+import { ItemDetail } from './ItemDetail.js';
 
 export const ItemDetailContainer = () => {
     const [muffins, setMuffins] = useState([]);
@@ -17,7 +18,7 @@ export const ItemDetailContainer = () => {
             {
                 muffins.length < 1
                 ? <p>No se han encontrado productos</p>
-                : muffins.map((muffins) => <p>{muffins.name}</p>
+                : muffins.map((muffins) => <ItemDetail />
             )
             }
         </div>
